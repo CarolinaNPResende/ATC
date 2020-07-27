@@ -87,7 +87,7 @@ nav{
     text-align: left;
     padding-top: 20px;
     box-shadow: 0px 3px 5px -1px #ccc;
-    background-color: white;
+    background-color: silver;
   }
 
   .navegar ul li ul li {
@@ -105,9 +105,6 @@ nav{
   }
 
 .navegar ul li ul li a { transition: all 0.5s ease; }
-
-
-
 
 .burger{
   display: none;

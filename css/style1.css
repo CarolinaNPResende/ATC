@@ -21,12 +21,7 @@ nav{
   width: 60%;
 }
 
-.nav-links li{
-  list-style: none;
-}
-
 .nav-links a{
-  color: white;
   text-decoration: none;
   letter-spacing: 3px;
   font-size: 13.5px;
@@ -34,13 +29,76 @@ nav{
 }
 
 .nav-links{
-  margin-top: -8px;
-  margin-left: -17px;
+  margin-top: 10px;
 }
 
-a:hover{
-  color: grey;
+.navegar {
+  margin: 0 auto;
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-size: 16px;
+  font-size: 14px;
 }
+
+  .navegar ul li {
+    list-style: none;
+    margin: 0 auto;
+    border-left: 2px black;
+    display: inline-block;
+    padding: 0 30px;
+    position: relative;
+    text-decoration: none;
+  }
+
+  .navegar li a {
+    color: black;
+  }
+
+  .navegar li a:hover {
+    color: grey;
+  }
+
+ .navegar li:hover {
+    cursor: pointer;
+  }
+
+ .navegar ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    padding-left: 0;
+    left: 0;
+    display: none;
+  }
+
+  .navegar ul li:hover > ul,
+  ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    min-width: 250px;
+    text-align: left;
+    padding-top: 20px;
+    box-shadow: 0px 3px 5px -1px #ccc;
+    background-color: silver;
+  }
+
+  .navegar ul li ul li {
+    clear: both;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+    border-style: none;
+  }
+
+  .navegar ul li ul li a:hover {
+    padding-left: 10px;
+    border-left: 2px black;
+    transition: all 0.3s ease;
+  }
+
+.navegar ul li ul li a { transition: all 0.5s ease; }
 
 .burger{
   display: none;
@@ -54,9 +112,6 @@ a:hover{
   margin: 5px;
   transition: all 0.3s ease;
 }
-
-
-
 
 /*------desktop-Menor------*/
 
